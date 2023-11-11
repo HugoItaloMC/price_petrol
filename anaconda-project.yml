@@ -1,0 +1,1265 @@
+# This is an Anaconda project file.
+#
+# Here you can describe your project and how to run it.
+# Use `anaconda-project run` to run the project.
+# The file is in YAML format, please see http://www.yaml.org/start.html for more.
+#
+
+#
+# Set the 'name' key to name your project
+#
+name: price_petrol
+
+#
+# Set the 'icon' key to give your project an icon
+#
+icon:
+
+#
+# Set a one-sentence-or-so 'description' key with project details
+#
+description:
+
+#
+# In the commands section, list your runnable scripts, notebooks, and other code.
+# Use `anaconda-project add-command` to add commands.
+#
+commands:
+  lib/lib/python3.12/site-packages/colorcet/examples/index.ipynb:
+    notebook: lib/lib/python3.12/site-packages/colorcet/examples/index.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/colorcet/examples/user_guide/Categorical.ipynb:
+    notebook: lib/lib/python3.12/site-packages/colorcet/examples/user_guide/Categorical.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/colorcet/examples/user_guide/Continuous.ipynb:
+    notebook: lib/lib/python3.12/site-packages/colorcet/examples/user_guide/Continuous.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/colorcet/examples/user_guide/index.ipynb:
+    notebook: lib/lib/python3.12/site-packages/colorcet/examples/user_guide/index.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/area_chart.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/area_chart.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/autompg_histogram.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/autompg_histogram.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/autompg_violins.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/autompg_violins.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/bachelors_degrees_by_gender.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/bachelors_degrees_by_gender.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/bars_economic.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/bars_economic.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/box_draw_roi_editor.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/box_draw_roi_editor.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/boxplot_chart.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/boxplot_chart.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/choropleth_data_link.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/choropleth_data_link.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/directed_airline_routes.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/directed_airline_routes.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/dot_example.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/dot_example.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/dragon_curve.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/dragon_curve.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/dropdown_economic.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/dropdown_economic.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/eeg_viewer.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/eeg_viewer.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/emoji_tsne.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/emoji_tsne.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/energy_sankey.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/energy_sankey.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/hextile_movie_ratings.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/hextile_movie_ratings.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/histogram_example.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/histogram_example.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/image_range_tool.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/image_range_tool.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/iris_density_grid.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/iris_density_grid.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/iris_example.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/iris_example.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/iris_grouped_grid.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/iris_grouped_grid.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/iris_splom_example.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/iris_splom_example.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/irregular_quadmesh.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/irregular_quadmesh.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/legend_example.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/legend_example.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/lesmis_example.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/lesmis_example.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/life_expectancy_split_violin.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/life_expectancy_split_violin.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/lorenz_attractor_example.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/lorenz_attractor_example.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/mandelbrot_section.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/mandelbrot_section.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/measles_example.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/measles_example.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/network_graph.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/network_graph.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/nyc_airport_connections.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/nyc_airport_connections.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/nyc_radial_heatmap.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/nyc_radial_heatmap.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/point_draw_triangulate.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/point_draw_triangulate.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/quiver_demo.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/quiver_demo.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/route_chord.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/route_chord.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/scatter_economic.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/scatter_economic.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/square_limit.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/square_limit.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/step_chart.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/step_chart.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/stocks_example.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/stocks_example.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/texas_choropleth_example.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/texas_choropleth_example.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/timeseries_range_tool.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/timeseries_range_tool.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/topographic_hillshading.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/topographic_hillshading.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/us_unemployment.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/us_unemployment.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/verhulst_mandelbrot.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/bokeh/verhulst_mandelbrot.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/area_chart.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/area_chart.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/autompg_histogram.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/autompg_histogram.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/autompg_violins.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/autompg_violins.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/bachelors_degrees_by_gender.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/bachelors_degrees_by_gender.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/bars_economic.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/bars_economic.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/boxplot_chart.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/boxplot_chart.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/directed_airline_routes.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/directed_airline_routes.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/dragon_curve.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/dragon_curve.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/dropdown_economic.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/dropdown_economic.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/energy_sankey.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/energy_sankey.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/hextile_movie_ratings.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/hextile_movie_ratings.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/histogram_example.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/histogram_example.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/iris_density_grid.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/iris_density_grid.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/iris_example.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/iris_example.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/iris_grouped_grid.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/iris_grouped_grid.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/iris_splom_example.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/iris_splom_example.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/irregular_quadmesh.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/irregular_quadmesh.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/legend_example.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/legend_example.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/lorenz_attractor_example.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/lorenz_attractor_example.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/mandelbrot_section.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/mandelbrot_section.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/measles_example.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/measles_example.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/network_graph.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/network_graph.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/nyc_airport_connections.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/nyc_airport_connections.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/nyc_radial_heatmap.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/nyc_radial_heatmap.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/polar_scatter_demo.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/polar_scatter_demo.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/quiver_demo.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/quiver_demo.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/route_chord.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/route_chord.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/scatter_economic.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/scatter_economic.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/square_limit.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/square_limit.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/step_chart.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/step_chart.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/stocks_example.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/stocks_example.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/surface_3d.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/surface_3d.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/texas_choropleth_example.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/texas_choropleth_example.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/topographic_hillshading.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/topographic_hillshading.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/trisurf3d_demo.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/trisurf3d_demo.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/us_unemployment.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/us_unemployment.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/verhulst_mandelbrot.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/matplotlib/verhulst_mandelbrot.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/plotly/surface_3d.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/plotly/surface_3d.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/plotly/trisurf3d_demo.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/gallery/demos/plotly/trisurf3d_demo.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/getting_started/1-Introduction.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/getting_started/1-Introduction.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/getting_started/2-Customization.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/getting_started/2-Customization.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/getting_started/3-Tabular_Datasets.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/getting_started/3-Tabular_Datasets.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/getting_started/4-Gridded_Datasets.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/getting_started/4-Gridded_Datasets.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/getting_started/5-Live_Data.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/getting_started/5-Live_Data.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/bokeh/DynamicMap.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/bokeh/DynamicMap.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/bokeh/GridSpace.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/bokeh/GridSpace.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/bokeh/HoloMap.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/bokeh/HoloMap.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/bokeh/Layout.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/bokeh/Layout.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/bokeh/NdLayout.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/bokeh/NdLayout.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/bokeh/NdOverlay.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/bokeh/NdOverlay.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/bokeh/Overlay.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/bokeh/Overlay.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/matplotlib/DynamicMap.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/matplotlib/DynamicMap.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/matplotlib/GridSpace.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/matplotlib/GridSpace.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/matplotlib/HoloMap.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/matplotlib/HoloMap.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/matplotlib/Layout.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/matplotlib/Layout.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/matplotlib/NdLayout.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/matplotlib/NdLayout.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/matplotlib/NdOverlay.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/matplotlib/NdOverlay.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/matplotlib/Overlay.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/matplotlib/Overlay.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/plotly/DynamicMap.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/plotly/DynamicMap.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/plotly/GridSpace.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/plotly/GridSpace.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/plotly/HoloMap.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/plotly/HoloMap.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/plotly/Layout.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/plotly/Layout.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/plotly/NdLayout.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/plotly/NdLayout.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/plotly/NdOverlay.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/plotly/NdOverlay.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/plotly/Overlay.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/containers/plotly/Overlay.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Area.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Area.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Arrow.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Arrow.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Bars.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Bars.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Bivariate.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Bivariate.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Bounds.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Bounds.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Box.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Box.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/BoxWhisker.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/BoxWhisker.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Chord.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Chord.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Contours.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Contours.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Curve.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Curve.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Distribution.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Distribution.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Div.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Div.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Ellipse.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Ellipse.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/ErrorBars.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/ErrorBars.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Graph.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Graph.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/HLine.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/HLine.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/HLines.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/HLines.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/HSV.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/HSV.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/HSpan.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/HSpan.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/HSpans.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/HSpans.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/HeatMap.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/HeatMap.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/HexTiles.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/HexTiles.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Histogram.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Histogram.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Image.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Image.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/ImageStack.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/ImageStack.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/ItemTable.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/ItemTable.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Labels.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Labels.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Path.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Path.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Points.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Points.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Polygons.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Polygons.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/QuadMesh.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/QuadMesh.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/RGB.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/RGB.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/RadialHeatMap.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/RadialHeatMap.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Raster.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Raster.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Rectangles.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Rectangles.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Sankey.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Sankey.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Scatter.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Scatter.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Segments.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Segments.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Slope.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Slope.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Spikes.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Spikes.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Spline.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Spline.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Spread.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Spread.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Table.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Table.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Text.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Text.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Tiles.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Tiles.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/TriMesh.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/TriMesh.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/VLine.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/VLine.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/VLines.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/VLines.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/VSpan.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/VSpan.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/VSpans.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/VSpans.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/VectorField.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/VectorField.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Violin.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/bokeh/Violin.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Area.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Area.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Arrow.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Arrow.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Bars.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Bars.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Bivariate.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Bivariate.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Bounds.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Bounds.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Box.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Box.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/BoxWhisker.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/BoxWhisker.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Chord.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Chord.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Contours.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Contours.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Curve.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Curve.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Distribution.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Distribution.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Ellipse.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Ellipse.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/ErrorBars.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/ErrorBars.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Graph.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Graph.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/HLine.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/HLine.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/HLines.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/HLines.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/HSV.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/HSV.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/HSpan.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/HSpan.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/HSpans.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/HSpans.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/HeatMap.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/HeatMap.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/HexTiles.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/HexTiles.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Histogram.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Histogram.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Image.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Image.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/ImageStack.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/ImageStack.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/ItemTable.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/ItemTable.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Labels.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Labels.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Path.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Path.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Path3D.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Path3D.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Points.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Points.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Polygons.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Polygons.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/QuadMesh.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/QuadMesh.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/RGB.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/RGB.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/RadialHeatMap.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/RadialHeatMap.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Raster.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Raster.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Rectangles.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Rectangles.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Sankey.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Sankey.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Scatter.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Scatter.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Scatter3D.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Scatter3D.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Segments.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Segments.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Slope.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Slope.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Spikes.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Spikes.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Spline.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Spline.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Spread.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Spread.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Surface.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Surface.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Table.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Table.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Text.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Text.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/TriMesh.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/TriMesh.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/TriSurface.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/TriSurface.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/VLine.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/VLine.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/VLines.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/VLines.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/VSpan.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/VSpan.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/VSpans.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/VSpans.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/VectorField.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/VectorField.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Violin.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/matplotlib/Violin.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Area.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Area.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Bars.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Bars.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Bounds.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Bounds.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Box.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Box.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/BoxWhisker.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/BoxWhisker.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Curve.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Curve.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Distribution.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Distribution.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Ellipse.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Ellipse.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/ErrorBars.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/ErrorBars.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/HLine.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/HLine.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/HSpan.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/HSpan.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/HeatMap.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/HeatMap.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Histogram.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Histogram.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Image.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Image.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/ImageStack.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/ImageStack.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/ItemTable.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/ItemTable.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Path3D.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Path3D.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Points.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Points.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/RGB.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/RGB.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Raster.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Raster.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Scatter.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Scatter.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Scatter3D.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Scatter3D.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Spread.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Spread.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Surface.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Surface.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Table.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Table.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Tiles.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Tiles.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/TriSurface.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/TriSurface.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/VLine.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/VLine.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/VSpan.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/VSpan.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Violin.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/elements/plotly/Violin.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/features/bokeh/table_hooks_example.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/features/bokeh/table_hooks_example.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/Bounds.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/Bounds.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/BoundsX.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/BoundsX.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/BoundsY.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/BoundsY.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/BoxEdit.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/BoxEdit.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/CurveEdit.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/CurveEdit.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/FreehandDraw.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/FreehandDraw.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/PointDraw.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/PointDraw.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/PointerX.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/PointerX.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/PointerXY.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/PointerXY.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/PolyDraw.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/PolyDraw.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/PolyEdit.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/PolyEdit.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/RangeXY.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/RangeXY.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/Selection1D.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/Selection1D.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/Selection1D_paired.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/Selection1D_paired.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/Selection1D_points.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/Selection1D_points.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/Selection1D_tap.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/Selection1D_tap.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/Tap.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/bokeh/Tap.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/plotly/Bounds.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/plotly/Bounds.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/plotly/BoundsX.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/plotly/BoundsX.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/plotly/BoundsY.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/plotly/BoundsY.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/plotly/RangeXY.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/plotly/RangeXY.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/plotly/Selection1D_paired.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/plotly/Selection1D_paired.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/plotly/Selection1D_points.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/reference/streams/plotly/Selection1D_points.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/01-Annotating_Data.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/01-Annotating_Data.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/02-Composing_Elements.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/02-Composing_Elements.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/03-Applying_Customizations.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/03-Applying_Customizations.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/04-Style_Mapping.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/04-Style_Mapping.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/05-Dimensioned_Containers.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/05-Dimensioned_Containers.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/06-Building_Composite_Objects.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/06-Building_Composite_Objects.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/07-Live_Data.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/07-Live_Data.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/08-Tabular_Datasets.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/08-Tabular_Datasets.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/09-Gridded_Datasets.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/09-Gridded_Datasets.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/10-Indexing_and_Selecting_Data.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/10-Indexing_and_Selecting_Data.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/11-Transforming_Elements.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/11-Transforming_Elements.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/12-Responding_to_Events.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/12-Responding_to_Events.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/13-Custom_Interactivity.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/13-Custom_Interactivity.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/14-Data_Pipelines.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/14-Data_Pipelines.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/15-Large_Data.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/15-Large_Data.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/16-Streaming_Data.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/16-Streaming_Data.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/17-Dashboards.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/17-Dashboards.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Annotators.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Annotators.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Colormaps.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Colormaps.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Continuous_Coordinates.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Continuous_Coordinates.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Customizing_Plots.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Customizing_Plots.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Deploying_Bokeh_Apps.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Deploying_Bokeh_Apps.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Exporting_and_Archiving.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Exporting_and_Archiving.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Geometry_Data.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Geometry_Data.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Installing_and_Configuring.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Installing_and_Configuring.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Linked_Brushing.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Linked_Brushing.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Linking_Plots.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Linking_Plots.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Network_Graphs.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Network_Graphs.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Notebook_Magics.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Notebook_Magics.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Plots_and_Renderers.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Plots_and_Renderers.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Plotting_with_Bokeh.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Plotting_with_Bokeh.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Plotting_with_Matplotlib.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/examples/user_guide/Plotting_with_Matplotlib.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/tests/ipython/notebooks/test_opts_image_cell_magic.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/tests/ipython/notebooks/test_opts_image_cell_magic.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/tests/ipython/notebooks/test_opts_image_cell_magic_offset.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/tests/ipython/notebooks/test_opts_image_cell_magic_offset.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/tests/ipython/notebooks/test_opts_image_line_magic.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/tests/ipython/notebooks/test_opts_image_line_magic.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/holoviews/tests/ipython/notebooks/test_output_svg_line_magic.ipynb:
+    notebook: lib/lib/python3.12/site-packages/holoviews/tests/ipython/notebooks/test_output_svg_line_magic.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/getting_started/explorer.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/getting_started/explorer.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/getting_started/hvplot.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/getting_started/hvplot.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/getting_started/interactive.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/getting_started/interactive.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/geopandas/points.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/geopandas/points.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/geopandas/polygons.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/geopandas/polygons.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/andrewscurves.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/andrewscurves.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/area.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/area.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/bar.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/bar.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/barh.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/barh.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/bivariate.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/bivariate.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/box.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/box.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/errorbars.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/errorbars.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/heatmap.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/heatmap.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/hexbin.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/hexbin.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/hist.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/hist.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/kde.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/kde.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/labels.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/labels.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/lagplot.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/lagplot.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/line.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/line.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/ohlc.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/ohlc.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/parallelcoordinates.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/parallelcoordinates.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/scatter.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/scatter.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/scattermatrix.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/scattermatrix.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/step.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/step.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/table.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/table.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/violin.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/pandas/violin.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/xarray/bar.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/xarray/bar.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/xarray/contour.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/xarray/contour.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/xarray/contourf.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/xarray/contourf.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/xarray/hist.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/xarray/hist.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/xarray/image.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/xarray/image.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/xarray/kde.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/xarray/kde.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/xarray/line.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/xarray/line.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/xarray/quadmesh.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/xarray/quadmesh.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/xarray/rgb.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/xarray/rgb.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/xarray/vectorfield.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/xarray/vectorfield.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/reference/xarray/violin.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/reference/xarray/violin.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Customization.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Customization.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Explorer.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Explorer.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Geographic_Data.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Geographic_Data.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Gridded_Data.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Gridded_Data.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Integrations.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Integrations.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Interactive.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Interactive.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Introduction.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Introduction.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/user_guide/NetworkX.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/user_guide/NetworkX.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Pandas_API.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Pandas_API.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Plotting.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Plotting.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Plotting_Extensions.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Plotting_Extensions.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Plotting_with_Matplotlib.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Plotting_with_Matplotlib.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Plotting_with_Plotly.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Plotting_with_Plotly.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Statistical_Plots.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Statistical_Plots.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Streaming.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Streaming.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Subplots.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Subplots.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Timeseries_Data.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Timeseries_Data.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Viewing.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Viewing.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Widgets.ipynb:
+    notebook: lib/lib/python3.12/site-packages/hvplot/examples/user_guide/Widgets.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/matplotlib/backends/web_backend/nbagg_uat.ipynb:
+    notebook: lib/lib/python3.12/site-packages/matplotlib/backends/web_backend/nbagg_uat.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/nbclient/tests/files/Autokill.ipynb:
+    notebook: lib/lib/python3.12/site-packages/nbclient/tests/files/Autokill.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/nbclient/tests/files/Check History in Memory.ipynb:
+    notebook: lib/lib/python3.12/site-packages/nbclient/tests/files/Check History
+      in Memory.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/nbclient/tests/files/Clear Output.ipynb:
+    notebook: lib/lib/python3.12/site-packages/nbclient/tests/files/Clear Output.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/nbclient/tests/files/Disable Stdin.ipynb:
+    notebook: lib/lib/python3.12/site-packages/nbclient/tests/files/Disable Stdin.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/nbclient/tests/files/Empty Cell.ipynb:
+    notebook: lib/lib/python3.12/site-packages/nbclient/tests/files/Empty Cell.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/nbclient/tests/files/Error.ipynb:
+    notebook: lib/lib/python3.12/site-packages/nbclient/tests/files/Error.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/nbclient/tests/files/Factorials.ipynb:
+    notebook: lib/lib/python3.12/site-packages/nbclient/tests/files/Factorials.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/nbclient/tests/files/HelloWorld.ipynb:
+    notebook: lib/lib/python3.12/site-packages/nbclient/tests/files/HelloWorld.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/nbclient/tests/files/Inline Image.ipynb:
+    notebook: lib/lib/python3.12/site-packages/nbclient/tests/files/Inline Image.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/nbclient/tests/files/Interrupt.ipynb:
+    notebook: lib/lib/python3.12/site-packages/nbclient/tests/files/Interrupt.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/nbclient/tests/files/JupyterWidgets.ipynb:
+    notebook: lib/lib/python3.12/site-packages/nbclient/tests/files/JupyterWidgets.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/nbclient/tests/files/Other Comms.ipynb:
+    notebook: lib/lib/python3.12/site-packages/nbclient/tests/files/Other Comms.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/nbclient/tests/files/Output.ipynb:
+    notebook: lib/lib/python3.12/site-packages/nbclient/tests/files/Output.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/nbclient/tests/files/Parallel Execute A.ipynb:
+    notebook: lib/lib/python3.12/site-packages/nbclient/tests/files/Parallel Execute
+      A.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/nbclient/tests/files/Parallel Execute B.ipynb:
+    notebook: lib/lib/python3.12/site-packages/nbclient/tests/files/Parallel Execute
+      B.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/nbclient/tests/files/SVG.ipynb:
+    notebook: lib/lib/python3.12/site-packages/nbclient/tests/files/SVG.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/nbclient/tests/files/Skip Exceptions with Cell Tags.ipynb:
+    notebook: lib/lib/python3.12/site-packages/nbclient/tests/files/Skip Exceptions
+      with Cell Tags.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/nbclient/tests/files/Skip Exceptions.ipynb:
+    notebook: lib/lib/python3.12/site-packages/nbclient/tests/files/Skip Exceptions.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/nbclient/tests/files/Skip Execution with Cell Tag.ipynb:
+    notebook: lib/lib/python3.12/site-packages/nbclient/tests/files/Skip Execution
+      with Cell Tag.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/nbclient/tests/files/Sleep1s.ipynb:
+    notebook: lib/lib/python3.12/site-packages/nbclient/tests/files/Sleep1s.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/nbclient/tests/files/Unicode.ipynb:
+    notebook: lib/lib/python3.12/site-packages/nbclient/tests/files/Unicode.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/nbclient/tests/files/UnicodePy3.ipynb:
+    notebook: lib/lib/python3.12/site-packages/nbclient/tests/files/UnicodePy3.ipynb
+    env_spec: default
+  lib/lib/python3.12/site-packages/nbclient/tests/files/update-display-id.ipynb:
+    notebook: lib/lib/python3.12/site-packages/nbclient/tests/files/update-display-id.ipynb
+    env_spec: default
+
+  application:
+    unix: python3 -m app
+    env_spec: default
+    supports_http_options: true
+#
+# In the variables section, list any environment variables your code depends on.
+# Use `anaconda-project add-variable` to add variables.
+#
+variables: {}
+
+#
+# In the services section, list any services that should be
+# available before your code runs.
+# Use `anaconda-project add-service` to add services.
+#
+services: {}
+
+#
+# In the downloads section, list any URLs to download to local files
+# before your code runs.
+# Use `anaconda-project add-download` to add downloads.
+#
+downloads: {}
+
+#
+# In the packages section, list any packages that must be installed
+# before your code runs.
+# Use `anaconda-project add-packages` to add packages.
+#
+packages:
+- anaconda
+
+#
+# In the channels section, list any Conda channel URLs to be searched
+# for packages.
+#
+# For example,
+#
+# channels:
+#    - mychannel
+#
+channels: []
+
+#
+# In the platforms section, list platforms the project should work on
+# Examples: "linux-64", "osx-64", "win-64"
+# Use `anaconda-project add-platforms` to add platforms.
+#
+platforms:
+- linux-64
+- osx-64
+- win-64
+
+#
+# You can define multiple, named environment specs.
+# Each inherits any global packages or channels,
+# but can have its own unique ones also.
+# Use `anaconda-project add-env-spec` to add environment specs.
+#
+env_specs:
+  default:
+    description: Default environment spec for running commands
+    packages: []
+    channels: []
+    platforms: []
