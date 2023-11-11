@@ -1,0 +1,20 @@
+ - Projeto de Análise de Preços de Combustíveis - Nacional
+    Visão Geral
+
+    O objetivo deste projeto é desenvolver uma ferramenta de análise de preços de combustíveis em nível nacional.
+   O programa visa coletar informações detalhadas sobre os preços dos combustíveis em diferentes regiões e estados do
+   Brasil, utilizando como fonte primária o site oficial do governo brasileiro, disponível em gov.br/anp.
+
+ - Funcionalidades Principais
+
+    Coleta de Dados:  O programa  realizará a extração de  dados  diretamente do site da  Agência Nacional do Petróleo,
+   Gás Natural e Biocombustíveis (ANP). As informações  coletadas incluirão  preços por  região e estado, proporcionando
+   uma visão abrangente dos custos dos combustíveis em todo o país.
+
+    Análise por Região e Estado: A ferramenta possibilitará a análise dos dados coletados, permitindo a identificação de
+   padrões, variações e tendências nos preços dos combustíveis em  diferentes  localidades. Isso proporcionará insights
+   valiosos para consumidores, empresas e pesquisadores.
+
+    Relatórios Detalhados: O programa gerará relatórios detalhados, apresentando informações estatísticas, gráficos e
+    comparativos de preços.  Esses  relatórios poderão ser  utilizados  para  embasar decisões estratégicas, políticas
+    públicas e estudos de mercado.
