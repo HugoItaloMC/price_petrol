@@ -9,11 +9,10 @@ from src.queue import QueueLine
 class Task:
 
     def __init__(self):
-        self._queue = Queue()
         self._make = get_event_loop()
 
     def main(self):
-        _line = QueueLine()
+        _line = QueueLine(Queue())
         task_by = self._make.create_task(_line.executor())
         group = gather(task_by)
         self._make.run_until_complete(group)
