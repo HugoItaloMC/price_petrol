@@ -54,4 +54,4 @@ As dependências necessárias, como pandas e selenium, são instaladas com o com
   
      anaconda-project init
 
-- `app.py` O arquivo app.py serve como um ponto de entrada para o aplicativo, chamando o módulo `src/run.py` para executar as tarefas principais do programa.
+- `app.py` O arquivo app.py serve como um ponto de entrada para o aplicativo, chamando o módulo `src/run.py` para executar as tarefas de requisicão do programa.
