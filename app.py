@@ -21,7 +21,8 @@ def asset() -> ...:
 
 if __name__ == '__main__':
     asset()
+    # Testing coroutine calls with queues and pipes in execute line >> OK
     # Test from class Task() need running coroutine >> OK
-    # Test move to src/ dir
+    # Test move to src/ dir >> OK
     # Test path src/ >> OK
     # Test current dir >> OK

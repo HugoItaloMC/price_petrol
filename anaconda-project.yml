@@ -1236,6 +1236,9 @@ packages:
 - jupyter
 - notebook
 - -y
+- python-dotenv
+- --channel
+- conda-forge
 #
 # In the channels section, list any Conda channel URLs to be searched
 # for packages.

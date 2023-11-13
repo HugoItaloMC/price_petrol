@@ -1,14 +1,11 @@
-#  Módulo Responsável por capturar body da página contendo os links
-# Gerar ficheiros de armazenamento no sistema
-# Mais informacões em doc/README.md e doc/DOC.info
+import pstats
 
-# Imports
 import csv, subprocess, os, shlex, asyncio
 from dotenv import load_dotenv
 
 from bs4 import BeautifulSoup
 
-from helper import mk_csv_file
+from test_helper import mk_csv_file
 
 
 class ProcessAssets:
@@ -100,4 +97,26 @@ class WorkFlow:
 
 if __name__ == '__main__':
     import asyncio
+    import cProfile
+    import io
+    from pstats import SortKey
+
+    profile = cProfile.Profile()
+    profile.enable()
+
+    work = WorkFlow()
+    process = work.pipe('parser')
+    asyncio.run(process.get_())
+    profile.dump_stats('test_pipe.stats')
+    profile.dump_stats('test_pipe.profile')
+
+    profile.disable()
+
+    _str = io.StringIO()
+
+    _stats = pstats.Stats(profile, stream=_str).sort_stats(SortKey.TIME)
+    _stats.print_stats()
+    print(_str.getvalue())
+
+
 
