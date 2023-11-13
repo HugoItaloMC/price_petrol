@@ -1,4 +1,8 @@
-# Documentação de Testes Utilizando cProfile e SnakeViz
+# Documentação do Projeto
+
+**Nota Importante:** Este guia pressupõe que você já possui o Python instalado e configurado no seu ambiente de desenvolvimento. Se ainda não o fez, consulte a [documentação oficial do Python](https://docs.python.org/3/using/index.html) para obter instruções detalhadas sobre como instalar e configurar o Python em seu sistema operacional específico.
+
+## Testes Utilizando cProfile e SnakeViz
 
 _Este documento descreve o processo de teste do projeto utilizando o módulo nativo do Python, cProfile, para realizar a análise de desempenho dos arquivos .py. Além disso, será utilizado o SnakeViz como visualizador para as informações geradas pelo cProfile.
 Configuração do Ambiente de Testes_
@@ -20,7 +24,7 @@ Configuração do Ambiente de Testes_
 
  - `snakeviz:` Utilizado para visualização de perfis cProfile.
 
-__Certifique-se de que o ambiente de desenvolvimento esteja configurado com as dependências necessárias para os testes. Os requisitos específicos para os testes são:__
+__Certifique-se de que o ambiente de desenvolvimento esteja configurado com as dependências necessárias para os testes. Os requisitos específicos para os testes se encontram em tests/REQUIREMENTS.txt:__
 
     
 
@@ -33,8 +37,10 @@ __Certifique-se de que o ambiente de desenvolvimento esteja configurado com as d
 Antes de iniciar a análise de desempenho, é recomendável executar os testes unitários individualmente para garantir que cada componente do projeto esteja funcionando conforme o esperado.
 
 
-
     $ python3 tests/test_pipe.py
+    $ python3 tests/test_queue.py
+    $ python3 tests/test_run.py
+    $ python3 tests/test_helper.py
 
 
 ## Análise de Desempenho com cProfile
@@ -42,6 +48,9 @@ Antes de iniciar a análise de desempenho, é recomendável executar os testes u
 Para realizar a análise de desempenho utilizando cProfile, execute os seguintes comandos para cada arquivo .py do projeto:
 
     $ python3 -m cProfile -o stats_test_pipe.profile tests/test_pipe.py
+    $ python3 -m cProfile -o stats_test_queue.profile tests/test_queue.py
+    $ python3 -m cProfile -o stats_test_run.profile tests/test_run.py
+    $ python3 -m cProfile -o stats_test_helper.profile tests/test_helper.py
 
 Esses comandos gerarão arquivos de perfil com extensão .profile, como `stats_test_pipe.profile`, contendo informações detalhadas sobre o desempenho de cada script.
 
