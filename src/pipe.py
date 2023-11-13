@@ -101,16 +101,3 @@ class WorkFlow:
 if __name__ == '__main__':
     import asyncio
 
-    work = WorkFlow()
-    try:
-        # process = work.pipe(1234)  # Debugando entrada com inteiros -- 'AttributeError'
-        # process = work.pipe(['process'])  # Debugando entrada com list[string] -- 'AttributeError'
-        # process = work.pipe({"process": ()})  # Debugando entrada com dict[string | tuple] -- 'AttributeError'
-
-        # Debugando entrada  com caractere não correspondente ao prompt gerando um NoneType para o método get_
-        # o que ñ atende os requisitos -- 'AttributeError'
-        process = work.pipe("processs")
-        asyncio.run(process.get_())
-
-    except AttributeError as err_attr:
-        ...
