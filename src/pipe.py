@@ -1,6 +1,6 @@
 #  Módulo Responsável por capturar body da página contendo os links
 # Gerar ficheiros de armazenamento no sistema
-# Mais informacões em README.md
+# Mais informacões em doc/README.md e doc/DOC.info
 
 # Imports
 import csv, subprocess, os, shlex, asyncio
@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 from bs4 import BeautifulSoup
 
-from src.helper import mk_csv_file
+from helper import mk_csv_file
 
 
 class ProcessAssets:
@@ -84,7 +84,33 @@ class WorkFlow:
     def pipe(self, prompt):
 
         if prompt.lower() == 'process':
-            return self._process_assets()
+            try:
+                return self._process_assets()
+            except AttributeError:
+                prompt = 'process'
+                prompt.lower()
 
         elif prompt.lower() == 'parser':
-            return self._parser_assets()
+            try:
+                return self._parser_assets()
+            except AttributeError:
+                prompt = 'parser'
+                prompt.lower()
+
+
+if __name__ == '__main__':
+    import asyncio
+
+    work = WorkFlow()
+    try:
+        # process = work.pipe(1234)  # Debugando entrada com inteiros -- 'AttributeError'
+        # process = work.pipe(['process'])  # Debugando entrada com list[string] -- 'AttributeError'
+        # process = work.pipe({"process": ()})  # Debugando entrada com dict[string | tuple] -- 'AttributeError'
+
+        # Debugando entrada  com caractere não correspondente ao prompt gerando um NoneType para o método get_
+        # o que ñ atende os requisitos -- 'AttributeError'
+        process = work.pipe("processs")
+        asyncio.run(process.get_())
+
+    except AttributeError as err_attr:
+        ...
