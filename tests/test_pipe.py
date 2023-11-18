@@ -13,41 +13,123 @@ class ProcessAssets:
     # Tarefas no Sistema
 
     @staticmethod
-    async def mk_folder(path):
+    async def _mk_folder(path):
+        """
+        Corotina para criar um diretório se ele não existir.
+
+        Parameters:
+            - path (str): O caminho para o diretório que se deseja criar.
+
+        Esta corotina verifica se o diretório especificado pelo caminho 'path' já existe.
+        Se não existir, cria o diretório juntamente com todos os diretórios intermediários necessários.
+
+        Notas:
+            - Este método é estático e pertence à classe Core, e deve ser chamado como `Core._mk_folder(path)`.
+            - Utiliza a função `os.makedirs()` para criar o diretório recursivamente.
+
+        Args:
+            - path: Uma string representando o caminho para o diretório a ser criado.
+
+            Raises:
+            - OSError: Se ocorrerem erros ao tentar criar o diretório.
+
+            Exemplo de Uso:
+            ```
+            await Core._mk_folder('/caminho/para/novo/diretorio')
+            ```
+
+        Isso criará o diretório 'novo' dentro de 'diretorio' e todos os diretórios intermediários, caso ainda não existam.
         """
 
-        :param path:
-            Caminho para criar nova pasta se a mesma ñ existir
-        :return:
-            None
-        """
+        if not os.path.exists(path):
+            os.makedirs(path)
 
-        print('Chamando corotina mk_folder da classe ProcessAssets\nAtributo recebido %s' % path)
+    async def _environ(self):
+        """
+          Criação de arquivos e pastas no sistema.
 
-    @staticmethod
-    async def _environ():
-        """
-          Criar ficheiros e arquivos no sistema, buscar informacões em variáveis de ambiente
-        necessárias para execucão de processos
-        :return:
-            String
-        """
-        await ProcessAssets.mk_folder('TESTE _mk_folder')
-        print('Chamando corotina _environ da classe ProcessAssets')
+          Esta função executa uma série de ações para manipular o sistema de arquivos:
+          1. Obtém o diretório base do usuário (home_dir) e define um diretório de trabalho (work_dir).
+          2. Navega para o diretório de trabalho.
+          3. Cria uma pasta temporária dentro do diretório de trabalho.
+          4. Verifica a existência de um arquivo chamado 'response_body.html' na pasta temporária e o cria se não existir.
+          5. Retorna a concatenação das variáveis de ambiente 'COMMAND' e 'URL'.
+
+          Notas:
+          - É importante que as variáveis de ambiente 'COMMAND' e 'URL' estejam configuradas no arquivo .env.
+          - Esta função utiliza os módulos os, os.path e dotenv para manipular o sistema de arquivos e carregar variáveis de ambiente.
+
+          Return:
+          - Uma string que representa a concatenação das variáveis 'COMMAND' e 'URL', as quais serão utilizadas posteriormente.
+
+          Raises:
+          - KeyError: Se 'HOME' não estiver definido no ambiente ou se 'COMMAND' ou 'URL' não estiverem configurados no arquivo .env.
+          - OSError: Se ocorrerem erros ao tentar manipular o sistema de arquivos, como criar pastas ou arquivos.
+          """
+        home_dir = os.environ['HOME']
+        work_dir = os.path.join(home_dir, os.getcwd() + '/tests')
+        os.chdir(work_dir)
+        await ProcessAssets._mk_folder(os.path.join(work_dir, 'tmp'))
+        os.chdir(work_dir + '/tmp')
+        if not os.path.exists(os.path.join(os.getcwd(), 'response_body.html')):
+            os.mknod(os.path.join(os.getcwd(), 'response_body.html'))
+
+        os.chdir(work_dir)
+
+        load_dotenv()
+
+        COMMAND=os.getenv('COMMAND') + os.getenv('URL')
+        return COMMAND
 
     async def _process(self):
         """
-            Executa sub processo de um shell comando, uma request para buscar o código html
-         da página web contendo url de arquivos .xlsx
-        :return:
-            None
-        """
-        await self._environ()
-        print("Chamando corotina _process da classe ProcessAssets")
+            Executa um subprocesso para realizar uma solicitação HTTP e buscar o código HTML de uma página web.
+
+            Este método cria um subprocesso para executar um comando de shell com base na URL e no comando fornecidos
+            pelas variáveis de ambiente. O objetivo é buscar o código HTML de uma página da web que contenha URLs
+            de arquivos .xlsx.
+
+            Returns:
+            - None: Este método não retorna nenhum valor diretamente, mas executa o subprocesso para buscar o HTML.
+
+            Notes:
+            - O método utiliza a função `_environ()` para obter a concatenação das variáveis de ambiente que
+            fornecem o comando a ser executado e a URL a ser consultada.
+            - Utiliza as bibliotecas `asyncio` e `subprocess` para criar e executar o subprocesso.
+
+            Raises:
+            - OSError: Se ocorrerem erros durante a execução do subprocesso.
+
+            Example:
+            ```python
+            await self._process()
+            ```
+            Isso inicia o subprocesso para realizar a solicitação HTTP e buscar o código HTML da página web.
+            """
+        COMMAND = shlex.split("%s" % await self._environ())
+        _process = await asyncio.create_subprocess_exec(*COMMAND,
+                                                        stdout=subprocess.PIPE,
+                                                        stderr=subprocess.PIPE)
+        await _process.communicate()
 
     async def get_(self):
+        """Método para acionar o processo de busca do código HTML de uma página web.
+
+           Este método atua como um acionador para o processo de busca do código HTML de uma página da web que contém
+           URLs de arquivos .xlsx. Ele chama internamente o método '_process()' para iniciar o subprocesso de busca.
+
+           Returns:
+           - None: Não retorna nenhum valor diretamente, mas inicia o processo de busca do código HTML.
+
+           Example:
+           ```python
+           await self.get_()
+           ```
+           Este método é usado para iniciar o processo de busca do código HTML da página web.
+           ```"""
+
         await self._process()
-        print("Chamando corotina get_ da classe ProcessAssets")
+
 
 
 class ParserAssets:
@@ -96,27 +178,16 @@ class WorkFlow:
 
 
 if __name__ == '__main__':
-    import asyncio
-    import cProfile
-    import io
-    from pstats import SortKey
+    # Tests unitário objeto ProcessAssets()
+    # Criar Pasta /tmp: OK |
+    # criar arquivo 'response_bodt.html' na pasta /tmp: OK
+    # | Executar subprocesso comando shell: OK
 
-    profile = cProfile.Profile()
-    profile.enable()
 
-    work = WorkFlow()
-    process = work.pipe('parser')
+    process = ProcessAssets()
     asyncio.run(process.get_())
-    profile.dump_stats('test_pipe.stats')
-    profile.dump_stats('test_pipe.profile')
 
-    profile.disable()
 
-    _str = io.StringIO()
-
-    _stats = pstats.Stats(profile, stream=_str).sort_stats(SortKey.TIME)
-    _stats.print_stats()
-    print(_str.getvalue())
 
 
 
