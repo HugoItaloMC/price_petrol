@@ -135,21 +135,57 @@ class ProcessAssets:
 class ParserAssets:
     # Analisador do código html da página web requisitada
 
-    async def _parser_html(self, _path_file):
-        """
+    async def _parser_html(self, _parser_file):
+        """Extrai links de arquivos .xlsx de um arquivo HTML de uma página web.
 
-        :param _path_file:
-            Caminho do árquivo html da página web contendo links para arquivos .xlsx
-        :return:
+        Parameters
+        ----------
+        _parser_file : str
+            Arquivo HTML da página web contendo links para arquivos .xlsx.
+
+        Returns
+        -------
             None
-        """
-        await mk_csv_file('TESTE _mk_csv_file')
-        print("Atributo recebido %s " % _path_file)
-        print("Chamando corotina _parser_html da classe ParserAssets")
+
+        Esta corotina recebe o caminho para um arquivo HTML de uma página web e extrai os links associados aos arquivos
+        .xlsx presentes nesse arquivo. Utiliza a biblioteca BeautifulSoup para fazer o parsing do HTML e identificar os
+        links de interesse. Posteriormente, chama a função `mk_csv_file()` para criar um arquivo CSV a partir desses links.
+
+        Notes
+        -----
+            - O parâmetro '_path_file' deve ser o caminho completo para o arquivo HTML da página web.
+            - Utiliza a biblioteca BeautifulSoup para análise e extração dos links do HTML.
+            - Chama a função `mk_csv_file()` para criar um arquivo CSV com os links extraídos.
+
+        Raises
+        ------
+            Any exceptions raised by the operations within the function will be propagated.
+
+        Example
+        -------
+        ```python
+            await self._parse_html('/caminho/para/arquivo.html')
+        ```
+        Este método é utilizado para extrair links de arquivos .xlsx de um arquivo HTML da página web e criar um arquivo CSV
+        com esses links.
+        ``` """
+        URL: list = []
+
+        soup = BeautifulSoup(_parser_file, 'html.parser')
+        _tag = soup.select('a.internal-link')
+
+        for href in _tag:
+            URL.append(href['href'])
+
+        await mk_csv_file(URL)
 
     async def get_(self):
-        print("Chamando corotina get_ da classe ParserAssets")
-        await self._parser_html("TESTE _parser_html")
+        if not os.path.exists(os.path.join(os.getcwd(), 'tests/tmp')):
+            _process = ProcessAssets()
+            await _process.get_()
+
+        with open('tests/tmp/response_body.html', 'r+') as htmlfile:
+            await self._parser_html(htmlfile)
 
 
 class WorkFlow:
@@ -178,16 +214,10 @@ class WorkFlow:
 
 
 if __name__ == '__main__':
-    # Tests unitário objeto ProcessAssets()
-    # Criar Pasta /tmp: OK |
-    # criar arquivo 'response_bodt.html' na pasta /tmp: OK
-    # | Executar subprocesso comando shell: OK
-
-
-    process = ProcessAssets()
-    asyncio.run(process.get_())
-
-
-
-
-
+    # Tests unitário objeto ParserAssets()
+    # Buscar arquivo HTML: OK
+    # Analisar arquivo, buscar seletores CSS: OK
+    # Incurcionar entre ficheiros: OK
+    # Gerar arquivo CSV no diretório principal e inserir dados no arquivo: OK
+    parser = ParserAssets()
+    asyncio.run(parser.get_())
