@@ -9,21 +9,8 @@
 # Set the 'name' key to name your project
 #
 name: price_petrol
-
-#
-# Set the 'icon' key to give your project an icon
-#
 icon:
-
-#
-# Set a one-sentence-or-so 'description' key with project details
-#
 description:
-
-#
-# In the commands section, list your runnable scripts, notebooks, and other code.
-# Use `anaconda-project add-command` to add commands.
-#
 commands:
   lib/lib/python3.12/site-packages/colorcet/examples/index.ipynb:
     notebook: lib/lib/python3.12/site-packages/colorcet/examples/index.ipynb
@@ -1197,36 +1184,13 @@ commands:
   lib/lib/python3.12/site-packages/nbclient/tests/files/update-display-id.ipynb:
     notebook: lib/lib/python3.12/site-packages/nbclient/tests/files/update-display-id.ipynb
     env_spec: default
-
   application:
-    unix: python3 -m app
+    unix: python3 run.py
     env_spec: default
     supports_http_options: true
-#
-# In the variables section, list any environment variables your code depends on.
-# Use `anaconda-project add-variable` to add variables.
-#
 variables: {}
-
-#
-# In the services section, list any services that should be
-# available before your code runs.
-# Use `anaconda-project add-service` to add services.
-#
 services: {}
-
-#
-# In the downloads section, list any URLs to download to local files
-# before your code runs.
-# Use `anaconda-project add-download` to add downloads.
-#
 downloads: {}
-
-#
-# In the packages section, list any packages that must be installed
-# before your code runs.
-# Use `anaconda-project add-packages` to add packages.
-#
 packages:
 - anaconda
 

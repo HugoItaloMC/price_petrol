@@ -167,7 +167,7 @@ class ParserAssets:
             await self._parse_html('/caminho/para/arquivo.html')
         ```
         Este método é utilizado para extrair links de arquivos .xlsx de um arquivo HTML da página web e criar um arquivo CSV
-        com esses links.
+        com esses links:.
         ``` """
         URL: list = []
 
