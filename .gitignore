@@ -131,3 +131,6 @@ celerybeat.pid
 /conda-meta/*
 
 /.idea/
+.env
+tmp
+tests/tmp
