@@ -13,7 +13,6 @@ class ProcessAssets:
     # Tarefas no Sistema
 
     @staticmethod
-<<<<<<< HEAD
     async def mk_folder(path):
         """
 
@@ -49,7 +48,7 @@ class ProcessAssets:
     async def get_(self):
         await self._process()
         print("Chamando corotina get_ da classe ProcessAssets")
-=======
+
     async def _mk_folder(path):
         """
         Corotina para criar um diretório se ele não existir.
@@ -167,13 +166,11 @@ class ProcessAssets:
 
         await self._process()
 
->>>>>>> request
-
 
 class ParserAssets:
     # Analisador do código html da página web requisitada
 
-<<<<<<< HEAD
+
     async def _parser_html(self, _path_file):
         """
 
@@ -189,7 +186,7 @@ class ParserAssets:
     async def get_(self):
         print("Chamando corotina get_ da classe ParserAssets")
         await self._parser_html("TESTE _parser_html")
-=======
+
     async def _parser_html(self, _parser_file):
         """Extrai links de arquivos .xlsx de um arquivo HTML de uma página web.
 
@@ -222,6 +219,9 @@ class ParserAssets:
             await self._parse_html('/caminho/para/arquivo.html')
         ```
         Este método é utilizado para extrair links de arquivos .xlsx de um arquivo HTML da página web e criar um arquivo CSV
+<<<<<<< HEAD
+        com esses links:.
+=======
         com esses links.
         ``` """
         URL: list = []
@@ -241,7 +241,6 @@ class ParserAssets:
 
         with open('tests/tmp/response_body.html', 'r+') as htmlfile:
             await self._parser_html(htmlfile)
->>>>>>> request
 
 
 class WorkFlow:
@@ -270,7 +269,6 @@ class WorkFlow:
 
 
 if __name__ == '__main__':
-<<<<<<< HEAD
     import asyncio
     import cProfile
     import io
@@ -293,9 +291,6 @@ if __name__ == '__main__':
     _stats.print_stats()
     print(_str.getvalue())
 
-
-
-=======
     # Tests unitário objeto ParserAssets()
     # Buscar arquivo HTML: OK
     # Analisar arquivo, buscar seletores CSS: OK
@@ -303,4 +298,3 @@ if __name__ == '__main__':
     # Gerar arquivo CSV no diretório principal e inserir dados no arquivo: OK
     parser = ParserAssets()
     asyncio.run(parser.get_())
->>>>>>> request

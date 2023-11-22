@@ -1,19 +1,13 @@
-<<<<<<< HEAD
-import pstats
-=======
 import csv
 import os
 import pstats
 import aiofiles
-
->>>>>>> request
 
 
 async def pool_queue(queue, _class):
     await queue.put(_class)
 
 
-<<<<<<< HEAD
 async def mk_csv_file(path):
     print("Atributo Recebido %s " % path)
     print("Chamando corotina mk_csv_file do módulo helper.py")
@@ -35,7 +29,7 @@ if __name__ == '__main__':
         _stats = pstats.Stats(profile, stream=_str).sort_stats(SortKey.TIME)
         _stats.print_stats()
         print(_str.getvalue())
-=======
+
 async def mk_csv_file(_urls: list):
     """
         Cria um arquivo CSV contendo URLs fornecidos.
@@ -77,5 +71,5 @@ async def mk_csv_file(_urls: list):
 
         for url in _urls:
             await write_csv.writerow({"URL": url})
->>>>>>> request
+
 

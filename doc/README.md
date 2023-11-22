@@ -37,21 +37,26 @@ As dependências necessárias, como pandas e selenium, são instaladas com o com
 
     anaconda-project add-command --type unix --support-http-options application "params to command"
 
-- `src/` A pasta src/ contém os principais scripts Python do projeto:
+- `tmp/:` Contém o arquivo file_response_html.html gerado pelo subprocesso "curl".
 
-  - `run.py:` Este script é o ponto de entrada principal que executa as tarefas principais do programa.
-  
-  - `queue.py:` Implementa funcionalidades relacionadas a filas, se aplicável ao seu projeto.
-  
-  - `pipe.py:` Possíveis funcionalidades relacionadas a processos de pipeline, se aplicável ao seu projeto.
-  - `helper.py:` Contém funções de apoio que são utilizadas pelos outros scripts.
-  - `log/:` Contém logs do subprocesso "wget" gerados durante a execução do programa.
-  - `tmp/:` Contém o arquivo file_response_html.html gerado pelo subprocesso "wget".
-  - `.env:` Arquivo que contém variáveis de ambiente necessárias para a execução do programa.
+
+- `src/` A pasta src/ contém Objetos descritores e handlers Python do projeto:
+  - `src/commons.py` Contém objetos descritores das tarefas executadas em app/apps.py
+  - `src/handlers.py` Objetos controladores de objetos em toda aplicacão
+
+
+- `app/` Contém módulos python responsável por tarefas da aplicacão
+  - `app/pipe.py:` Possíveis funcionalidades relacionadas a processos de pipeline, se aplicável ao seu projeto.
+  - `app/apps.py` Gerando aplicacões dos objetos contidos em pipe.py 
+
+
+- `hooks.py:` Contém funções de apoio que são utilizadas pelos outros scripts.
+- `main.py:` Implementa funcionalidades relacionadas a filas, se aplicável ao seu projeto.
+- `run.py:` Este script é o ponto de entrada principal que executa as tarefas principais do programa.
+- `.env:` Arquivo que contém variáveis de ambiente necessárias para a execução do programa.
 
 - `anaconda-project.yml` O arquivo anaconda-project.yml contém as configurações padrão do ambiente do Anaconda, inicializado com o comando:
   
   
      anaconda-project init
 
-- `app.py` O arquivo app.py serve como um ponto de entrada para o aplicativo, chamando o módulo `src/run.py` para executar as tarefas de requisicão do programa.
