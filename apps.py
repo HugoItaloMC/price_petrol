@@ -1,5 +1,5 @@
-from utils.pipe_requests import PipeRequest, PipeRecv
-from utils.pipe_frame import PipeFrame
+from pipes.pipe_requests import PipeRequest, PipeRecv
+from pipes.pipe_frame import PipeFrame
 from src.commons import DescritorPipeRequest, DescritorPipeRecv, DescritorPipeFrame
 
 

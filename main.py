@@ -34,7 +34,7 @@ class QueueLine(Handler):
             if _prompt == 'frame_data_':
                 self.app_frame = ApplicationPipeFrame()
                 post_xlsx_ = await self.pool_queue(_class=self.app_frame)
-                await post_xlsx_._xlsx(inpath_='tmp/file_url.csv', outpath_='tmp', to_drop_=False)
+                await post_xlsx_._xlsx(inpath_='tmp/file_url.csv', _to_drop='Unnamed: 2', outpath='tmp')
 
 
     def __iter__(self):
