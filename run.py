@@ -13,10 +13,9 @@ class Task:
 
     def main(self):
         _line = QueueLine()
-        task_by = self._make.create_task(_line.execute_(_prompt='plot_data_'))
+        task_by = self._make.create_task(_line.execute_(_prompt='frame_data_'))
         group = gather(task_by)
         self._make.run_until_complete(group)
-        print(next(map(str, _line)))
 
     def __call__(self, *args, **kwargs):
         return self.main()
