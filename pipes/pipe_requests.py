@@ -11,11 +11,11 @@ from bs4 import BeautifulSoup
 
 
 
-class ProcessAssets:
+class PipeRequest:
 
     # Tarefas no Sistema
 
-    async def _process(self, _cmd):
+    async def _pipe(self, _cmd):
         """
             Executa sub processo de um shell comando, uma request para buscar o código html
          da página web contendo url de arquivos .xlsx
@@ -25,14 +25,14 @@ class ProcessAssets:
         _task = await asyncio.create_subprocess_shell(_cmd)
         await _task.communicate()
 
-    async def begin_(self, cmd):
-        await self._process(_cmd=cmd)
+    async def request_(self, cmd):
+        await self._pipe(_cmd=cmd)
 
 
-class ParserAssets:
+class PipeRecv:
     # Analisador do código html da página web requisitada
 
-    async def _parser_html(self, _aio_file):
+    async def _pipe(self, _aio_file):
         """
 
         :param _path_file:
@@ -51,4 +51,4 @@ class ParserAssets:
 
     async def soup_(self, _path_file):
         async with aiofiles.open(_path_file) as htmlfilerr:
-            await self._parser_html(_aio_file=await htmlfilerr.read())
+            await self._pipe(_aio_file=await htmlfilerr.read())

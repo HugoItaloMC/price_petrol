@@ -3,7 +3,7 @@
 
 # Imports
 import os, json
-from app.apps import ApplicationProcessAssets, ApplicationParserAssets
+from apps import ApplicationPipeRequest, ApplicationPipeRecv, ApplicationPipeFrame
 from src.handlers import Handler
 
 from dotenv import load_dotenv
@@ -23,13 +23,19 @@ class QueueLine(Handler):
     async def execute_(self, _prompt):
 
         if _prompt:
-            self.app_process_ = ApplicationProcessAssets()
-            post_urls_ = await self.pool_queue(_class=self.app_process_)
+            self.app_request_ = ApplicationPipeRequest()
+            post_urls_ = await self.pool_queue(_class=self.app_request_)
             await post_urls_._switch(_cmd=CMD)
 
-            self.app_parser_ = ApplicationParserAssets()
-            take_urls_ = await self.pool_queue(_class=self.app_parser_)
+            self.app_recv_ = ApplicationPipeRecv()
+            take_urls_ = await self.pool_queue(_class=self.app_recv_)
             await take_urls_._spider(_path='tmp/response_body.html')
+
+            if _prompt == 'frame_data_':
+                self.app_frame = ApplicationPipeFrame('tmp/file_url.csv')
+                post_xlsx_ = await self.pool_queue(_class=self.app_frame)
+                await post_xlsx_._xlsx(outpath='tmp')
+
 
     def __iter__(self):
         yield from {"_attrs": {attr: getattr(self, attr) for attr in self.__dict__.keys()}}.items()
