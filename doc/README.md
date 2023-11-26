@@ -37,9 +37,7 @@ As dependências necessárias, como pandas e selenium, são instaladas com o com
 
     anaconda-project add-command --type unix --support-http-options application "params to command"
 
-
 - `tmp/:` Contém arquivos gerados por pipelines contendo bases para desempenho da aplicacão (URLs, planinhas, responstas HTTP)
-
 
 
 - `src/` A pasta src/ contém Objetos descritores e handlers Python do projeto:
@@ -54,8 +52,6 @@ As dependências necessárias, como pandas e selenium, são instaladas com o com
 
 
 -  `apps.py` Gerando aplicacões dos objetos contidos em `pipe/`
-
-
 
 
 
