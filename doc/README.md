@@ -56,6 +56,9 @@ As dependências necessárias, como pandas e selenium, são instaladas com o com
 -  `apps.py` Gerando aplicacões dos objetos contidos em `pipe/`
 
 
+
+
+
 - `hooks.py:` Contém funções de apoio que são utilizadas pelos outros scripts.
 - `main.py:` Implementa funcionalidades relacionadas a filas, se aplicável ao seu projeto.
 - `run.py:` Este script é o ponto de entrada principal que executa as tarefas principais do programa.
