@@ -32,9 +32,9 @@ class QueueLine(Handler):
             await take_urls_._spider(_path='tmp/response_body.html')
 
             if _prompt == 'frame_data_':
-                self.app_frame = ApplicationPipeFrame()
+                self.app_frame = ApplicationPipeFrame('tmp/file_url.csv')
                 post_xlsx_ = await self.pool_queue(_class=self.app_frame)
-                await post_xlsx_._xlsx(inpath_='tmp/file_url.csv', _to_drop='Unnamed: 2', outpath='tmp')
+                await post_xlsx_._xlsx(outpath='tmp')
 
 
     def __iter__(self):

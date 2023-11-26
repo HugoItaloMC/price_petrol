@@ -21,7 +21,7 @@ class DescritorPipeRecv:
 class DescritorPipeFrame:
 
     def __set__(self, instance):
-        return lambda inpath_, outpath, _to_drop: instance.pipeline_(inpath_=inpath_, to_drop=_to_drop, outpath_=outpath)
+        return lambda outpath: instance.pipeline_(outpath_=outpath)
 
     def __get__(self, instance, owner):
         return self.__set__(instance)
