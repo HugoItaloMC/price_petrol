@@ -11,13 +11,6 @@ class Task:
     def __init__(self, op: str = ''):
         self._op = op
 
-<<<<<<< HEAD
-    def main(self):
-        _line = QueueLine()
-        task_by = self._make.create_task(_line.execute_(_prompt='frame_data_'))
-        group = gather(task_by)
-        self._make.run_until_complete(group)
-=======
     async def _task_frame_data(self):
         line_frame_data = QueueLine()
         yield line_frame_data.execute_(_prompt='frame_data')
@@ -42,7 +35,6 @@ class Task:
     def runner(self):
         _make = new_event_loop()
         _make.run_until_complete(self.run_async())
->>>>>>> main
 
     def __call__(self, *args, **kwargs):
         return self.runner()
