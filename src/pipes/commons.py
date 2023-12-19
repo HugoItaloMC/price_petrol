@@ -13,7 +13,7 @@ class DescritorPipes:
         elif isinstance(instance, PipeFrame):
             self._method = lambda outpath: instance.pipeline_(outpath_=outpath)
         elif isinstance(instance, PipePlotting):
-            self._method = lambda : instance.plot_data_view()
+            self._method = lambda: instance.plot_data_view()
         return self._method
 
     def __get__(self, instance, owner):
