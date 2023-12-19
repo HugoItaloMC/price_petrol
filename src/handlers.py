@@ -1,4 +1,5 @@
 import asyncio
+from src.apps import ApplicationPipeRequest, ApplicationPipeRecv, ApplicationPipeFrame, ApplicationPipePlotting
 
 
 class MetaHandler(type):
@@ -16,6 +17,11 @@ class Handler(metaclass=MetaHandler):
 
     def __init__(self):
         self._queue = asyncio.Queue()
+
+        self._app_request = ApplicationPipeRequest()
+        self._app_recv = ApplicationPipeRecv()
+        self._app_frame = ApplicationPipeFrame('tmp/file_url.csv')
+        self._app_plotting = ApplicationPipePlotting('tmp/output.xlsx')
 
     def __getattr__(self, attr):
         valur = attr

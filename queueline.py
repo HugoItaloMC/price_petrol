@@ -3,7 +3,10 @@
 
 # Imports
 import os, json
+<<<<<<< HEAD:main.py
 from apps import ApplicationPipeRequest, ApplicationPipeRecv, ApplicationPipeFrame
+=======
+>>>>>>> main:queueline.py
 from src.handlers import Handler
 
 from dotenv import load_dotenv
@@ -21,8 +24,12 @@ class QueueLine(Handler):
         return super().__getattr__(attr)
 
     async def execute_(self, _prompt):
-
+        self.post_urls_ = await self.pool_queue(_class=self._app_request)
+        self.take_urls_ = await self.pool_queue(_class=self._app_recv)
+        self.post_xlsx_ = await self.pool_queue(_class=self._app_frame)
+        self.post_plotting = await self.pool_queue(_class=self._app_plotting)
         if _prompt:
+<<<<<<< HEAD:main.py
             self.app_request_ = ApplicationPipeRequest()
             post_urls_ = await self.pool_queue(_class=self.app_request_)
             await post_urls_._switch(_cmd=CMD)
@@ -30,6 +37,16 @@ class QueueLine(Handler):
             self.app_recv_ = ApplicationPipeRecv()
             take_urls_ = await self.pool_queue(_class=self.app_recv_)
             await take_urls_._spider(_path='tmp/response_body.html')
+=======
+            await self.post_urls_._switch(_cmd=CMD)
+            await self.take_urls_._spider(_path='tmp/response_body.html')
+
+            if _prompt == 'frame_data_':
+                await self.post_xlsx_._xlsx(outpath='tmp')
+
+            if _prompt == 'plotting':
+                 await self.post_plotting._plot()
+>>>>>>> main:queueline.py
 
             if _prompt == 'frame_data_':
                 self.app_frame = ApplicationPipeFrame('tmp/file_url.csv')

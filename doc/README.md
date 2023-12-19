@@ -45,12 +45,22 @@ As dependências necessárias, como pandas e selenium, são instaladas com o com
   - `src/handlers.py` Objetos controladores de objetos em toda aplicacão
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 - `pipe/` Contém módulos python responsável por tarefas da aplicacão
   - `pipe/pipe_requests.py:` Funcionalidades relacionadas a processos de pipeline de requisicões na URL e recolhimento de URLS contidas na body da página html
   - `pipe/pipe_frame.py`  Gerando frame .xlsx de saída após recebimento de um frame .xlsx de entrada e retirada de seus dados nulos e inconsistentes
 
 
 -  `apps.py` Gerando aplicacões dos objetos contidos em `pipe/`
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> main
 - `hooks.py:` Contém funções de apoio que são utilizadas pelos outros scripts.
 - `main.py:` Implementa funcionalidades relacionadas a filas, se aplicável ao seu projeto.
 - `run.py:` Este script é o ponto de entrada principal que executa as tarefas principais do programa.
